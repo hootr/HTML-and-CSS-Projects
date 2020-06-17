@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>I Teach We Learn</title>
-  <link rel="stylesheet" type="text/css" href="styles2.css">
+  <link rel="stylesheet" type="text/css" href="one_page_website.css">
 </head>
 <body>
   <!-- Header -->
@@ -18,7 +18,7 @@
     
   </body>
   <!-- NAV -->
-   <nav>
+   <div class="navbar">
      
      <ul>
       <li><a href="#home">Home</a></li>
@@ -27,7 +27,7 @@
       <li><a href="#contact">Contact</a></li>
 
      </ul>
-   </nav>
+    </div>
    <br>
    <!-- HOME -->
    <section>
@@ -38,6 +38,8 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
 
 </section>
 <!-- GALLERY -->
@@ -52,7 +54,7 @@
 							<img src="images/image1.jpg" alt="HTML and CSS">
 							<div>
 								<h3></h3>
-								<p> Learn HTML5 and CSS3
+								<p> 
 							</div>
 						</div>
 					</div>
@@ -62,7 +64,7 @@
 							<img src="images/image2.jpg" alt="random code">
 							<div>
 								<h3></h3>
-								<p> You Will be able to understand what this says 
+								<p> 
 							</div>
 						</div>
 					</div>
@@ -72,7 +74,7 @@
 							<img src="images/image3.jpg" alt="random code">
 							<div>
 								<h3></h3>
-								<p> Learnt to find coding fun
+								<p> 
 							</div>
 						</div>
 					</div>
@@ -82,7 +84,7 @@
 							<img src="images/image4.jpg" alt="random code">
 							<div>
 								<h3></h3>
-								<p> HTML is the Starting point
+								<p>
 							</div>
 						</div>
 					</div>
@@ -92,10 +94,11 @@
 							<img src="images/image5.jpg" alt="eat and sleep code">
 							<div>
 								<h3></h3>
-								<p> You will EAT And Sleep Code
+								<p> 
 							</div>
 						</div>
-					</div>
+          </div>
+        </div>
           
     <section>
           <!-- VIDEOS -->
@@ -108,7 +111,7 @@
                   <iframe width="300" height="300" src="https://www.youtube.com/embed/hu-q2zYwEYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <div>
                     <h3></h3>
-                    <p> Learn HTML5 and CSS3
+                    <p> 
                   </div>
                 </div>
               </div>
@@ -118,7 +121,7 @@
                   <iframe width="300" height="300" src="https://www.youtube.com/embed/Z0lOw_Ud1iQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <div>
                     <h3></h3>
-                    <p> You Will be able to understand what this says 
+                    <p> 
                   </div>
                 </div>
               </div>
@@ -128,7 +131,7 @@
                   <iframe width="300" height="300" src="https://www.youtube.com/embed/pm5OVxpul48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <div>
                     <h3></h3>
-                    <p> Learnt to find coding fun
+                    <p> 
                   </div>
                 </div>
               </div>
@@ -138,7 +141,7 @@
                   <iframe width="300" height="300" src="https://www.youtube.com/embed/ONin3xInlGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <div>
                     <h3></h3>
-                    <p> HTML is the Starting point
+                    <p> 
                   </div>
                 </div>
               </div>
@@ -148,7 +151,7 @@
                   <iframe width="300" height="300" src="https://www.youtube.com/embed/33IerJmuFGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <div>
                     <h3></h3>
-                    <p> You will EAT And Sleep Code
+                    <p> 
                   </div>
                 </div>
               </div>
@@ -156,36 +159,24 @@
               
             </section>
           <!-- CONTACT US -->
-          <section>
-            <div id="contact">
-              <div>
-                <h1>Reservations</h1>
-                <div>
-                  <h2><span>Your new skills are waiting!</span>
-                    <br /> Contact us to get started!
-                  </h2>
-                  <p>
-                    Please provide us with your basic contact information.
-                  </p>
-                  <div>
-                    <form action="" method="post">
-                      <input class="rsvp" text="text" value="First Name">
-                      <input class="rsvp" text="text" value="Last Name">
-                      <input class="rsvp" text="text" value="Email Address">
-                      <input class="rsvp" text="text" value="Phone Number">
-                      <div class="form-spacer">
-                        <label class="terms">Terms and Conditions</label>
-                      </div>
-                      <div>
-                        <input type="submit" value="Submit">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          
+          <div>
+          <form action="/my-handling-form-page" method="post"> 
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name" />
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email" />
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+
+            </form>
+          </div>
           
           <!-- FOOTER -->
           <div>
