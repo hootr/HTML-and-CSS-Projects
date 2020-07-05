@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>I Teach We Learn</title>
   <link rel="stylesheet" type="text/css" href="one_page_website.css">
+  
 </head>
 <body>
   <!-- Header -->
@@ -45,60 +46,77 @@
 <!-- GALLERY -->
 <br>
 <div id="gallery">
-				<h1>GALLERY</h1>
-				<div>
-					
-					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="images/image1.jpg" alt="HTML and CSS">
-							<div>
-								<h3></h3>
-								<p> 
-							</div>
-						</div>
-					</div>
-					
-					<div>
-						<div>
-							<img src="images/image2.jpg" alt="random code">
-							<div>
-								<h3></h3>
-								<p> 
-							</div>
-						</div>
-					</div>
-				
-					<div>
-						<div>
-							<img src="images/image3.jpg" alt="random code">
-							<div>
-								<h3></h3>
-								<p> 
-							</div>
-						</div>
-					</div>
-					
-					<div>
-						<div>
-							<img src="images/image4.jpg" alt="random code">
-							<div>
-								<h3></h3>
-								<p>
-							</div>
-						</div>
-					</div>
-					
-					<div>
-						<div>
-							<img src="images/image5.jpg" alt="eat and sleep code">
-							<div>
-								<h3></h3>
-								<p> 
-							</div>
-						</div>
-          </div>
-        </div>
+  <h1> Gallery</h1>
+</div>
+<!-- Beginning of Light Box -->
+<div class="row">
+  <div class="column">
+    <img src="./images/image12.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/image22.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/image33.jpg"   onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/image44.jpg"   onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal" style="display: none;">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides" style="display: none;" >
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/img1_w.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides" style="display: none;" >
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/img2_w.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides" style="display: none;" >
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/img3_w.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides" style="display: none;" >
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/img4_w.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./images/image12.jpg" onclick="currentSlide(1)" alt="HTML & CSS">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/image22.jpg" onclick="currentSlide(2)" alt="Random HTML Code">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/image33.jpg" onclick="currentSlide(3)" alt="Random Code">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/image44.jpg" onclick="currentSlide(4)" alt="HTML Code">
+    </div>
+
+  </div>
+</div>
           
     <section>
           <!-- VIDEOS -->
@@ -182,7 +200,7 @@
           <div>
             www.iteachwelearn.com &nbsp;| &copy; 2020 &nbsp; By: Robert Hooten
           </div>
-          
+          <script src="./js/one_page_website.js" defer></script>
           </body>
         </html>
           
